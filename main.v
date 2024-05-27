@@ -68,12 +68,12 @@ fn main() {
     return
   }
 
-  print_in_color('32', '\nCreating project...')
+  print_in_color('90', '\nCreating project...')
   project_response := create_project.create_project(project_name, project_path, project_language,
     user_does_want_template)
 
   if project_response {
-    print_in_color('32', '\nProject created successfully!')
+    print_in_color('32', '\nProject created successfully - Path ${project_path}')
     input('Press any key to exit...')
   } else {
     print_in_color('31', '\nProject creation failed')
